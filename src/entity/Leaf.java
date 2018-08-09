@@ -13,7 +13,11 @@ public class Leaf implements Component {
         this.count = count;
     }
 
+    public Leaf() {
+    }
+
     private String leaf;
+
     private int count;
 
     public int getCount() {

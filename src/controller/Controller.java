@@ -1,6 +1,6 @@
-package logic;
+package controller;
 
-import util.*;
+import parser.*;
 import java.io.*;
 
 /**
@@ -35,7 +35,7 @@ public class Controller {
             printText(sentence, bufferedWriter, "\n");
             String[] word = Parser.goNext(sentence, new SentenceParser());
             sort(word, 'a');
-            printText(word, bufferedWriter, " ");
+            printText(word, bufferedWriter, "\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
